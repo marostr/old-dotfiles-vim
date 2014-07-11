@@ -17,6 +17,7 @@ Plugin 'gmarik/vundle'
 
 " Nav
 Plugin 'kien/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " UI
 Plugin 'bling/vim-airline'
@@ -24,12 +25,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mhinz/vim-startify'
 Plugin 'mbbill/undotree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'benmills/vimux'
 
 " Commands
 Plugin 'tpope/vim-fugitive'
 Plugin 'ecomba/vim-ruby-refactoring'
 
 " Helpers
+" Plugin 'scrooloose/syntastic'
+Plugin 'rking/ag.vim'
 
 " Languages
 "   Ruby and Rails
