@@ -15,7 +15,7 @@ let g:airline_theme = 'luna'
 let g:airline_powerline_fonts = 1
 let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#tabline#enabled = 1 " Show buffers
+let g:airline#extensions#tabline#enabled = 0 " Show buffers
 
 let g:airline#extensions#hunks#enabled = 0
 let g:airline_mode_map = {
@@ -42,8 +42,10 @@ let g:airline_section_z = '%3p%% %{substitute(line("."), "\\v(\\d)((\\d\\d\\d)+\
 " --------
 " NERDTree
 " --------
-" Start NERDTree
-autocmd ViMenter * if !argc() | NERDTree | endif
+" Start NERDTree. Find to follow opened file
+autocmd ViMenter * NERDTreeFind
+" Follow file opened with CtrlP
+autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
 " Go to previous (last accessed) window.
 autocmd VimEnter * wincmd p
 " Close NERDTree when it's last window

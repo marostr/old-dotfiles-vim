@@ -25,7 +25,7 @@ vnoremap > >gv
 vnoremap < <gv
 
 " Remove trailing whitespaces on save
-autocmd FileType ruby,haml,coffee,vim autocmd BufWritePre <buffer> :%s/\s\+$//e " Only rb, haml, coffee, erb
+autocmd FileType ruby,haml,coffee,vim,css,sass,scss autocmd BufWritePre <buffer> :%s/\s\+$//e " Only rb, haml, coffee, erb, css
 
 "window mappings
 map <Space> <c-W>w
